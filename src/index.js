@@ -3,6 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import * as am4core from "@amcharts/amcharts4/core"
+import * as am4maps from "@amcharts/amcharts4/maps"
+import * as am4charts from "@amcharts/amcharts4/charts"
+
+let map = am4core.create(
+  "mapdiv",
+  am4maps.MapChart
+);
 
 ReactDOM.render(
   <React.StrictMode>
